@@ -9,6 +9,8 @@ new Vue({
     el: "#app",
     router,
     components: { App },
-    template: "<App/>",
+    render(c){
+       return c(App)
+    }
 })
 /* eslint-enable no-new */
