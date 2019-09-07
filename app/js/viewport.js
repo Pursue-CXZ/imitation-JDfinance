@@ -8,7 +8,7 @@
             hotcssEl = document.querySelector("meta[name=\"hotcss\"]"),
             dpr = window.devicePixelRatio || 1,
             maxWidth = 540,
-            designWidth = 0
+            designWidth = 0;
 
         dpr = dpr >= 3 ? 3 : (dpr >= 2 ? 2 : 1)
 
@@ -87,7 +87,7 @@
             return false
         }
 
-        document.documentElement.style.fontSize = `${innerWidth * 20 / 320}px`
+        document.documentElement.style.fontSize = `${innerWidth * 20 / 375}px`
         ;hotcss.callback && hotcss.callback()
     }
 
